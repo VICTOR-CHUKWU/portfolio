@@ -22,7 +22,7 @@ header {
   width: 100%;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -86,6 +86,6 @@ h1 {
   justify-content: center;
 }
 
-.dflex a{
+.dflex a {
   margin: 1rem 1rem;
 }
