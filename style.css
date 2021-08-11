@@ -1,0 +1,60 @@
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #E5E5E5;
+  font-family: sans-serif;
+}
+header{
+    background: #3C3A39;
+    padding: 1rem 3rem;
+}
+.mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.logo{
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    line-height: 24px;
+}
+.toggle-button{
+    display: flex;
+    flex-direction: column;
+    width: 16px;
+}
+.toggle-span{
+    background: white;
+    width: 16px;
+    height: 2px;
+    margin-bottom: .2rem;
+}
+.hero{
+    background: #1C1A19;
+    padding: 4rem 1rem;
+}
+h1{
+    font-size: 56px;
+    color: #FF6B00;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 0;
+}
+.info{
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+.description{
+    max-width: 70%;
+    margin: 0 auto;
+}
+.description p{
+    font-size: 16px;
+    color: white;
+    line-height: 24px;
+    text-align: center;
+}
