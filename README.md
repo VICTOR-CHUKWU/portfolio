@@ -5,6 +5,8 @@ personal portfolio
 
 > this project is a project on my porfolio
 
+![screenshot](./screenshots/mobile-head-screenshot.png)
+
 ## Built With
 - html, css
 - node, git
@@ -12,7 +14,7 @@ personal portfolio
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-install git, node, any code editor
+install git, node, any code editor in your local machine
 
 ### Setup
 clone the repo or download from https://github.com/VICTOR-CHUKWU/portfolio
@@ -21,7 +23,7 @@ clone the repo or download from https://github.com/VICTOR-CHUKWU/portfolio
 install all dependencies with npm install
 
 ### Usage
-run npm start to see project in yor local browser
+open index.html in your local browser
 
 ## Authors
 👤 **Victor**
