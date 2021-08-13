@@ -104,7 +104,6 @@ h1 {
 }
 
 .mobile-projects {
-  padding: 2rem 1rem;
   margin-top: 3rem;
 }
 
@@ -198,13 +197,11 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin: 0.5rem 1rem;
 }
 
 .project-inner {
   margin-top: 4rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  padding: 0.5rem 0.5rem;
 }
 
 .project-one .paragraph {
@@ -313,6 +310,15 @@ textarea {
 
 .border-top {
   border-top: 1px solid lightgray;
+  padding-top: 3rem;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.m-3 {
+  margin: 0 1rem;
 }
 
 .hr-bold {
