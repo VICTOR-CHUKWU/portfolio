@@ -63,6 +63,14 @@ a {
   margin-bottom: 0.2rem;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
 .hero {
   background: #1c1a19;
   padding: 2rem 1rem 1rem 1rem;
@@ -196,7 +204,7 @@ h1 {
   background-image: url("./img/ImgPlaceholder(2).png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .project-inner {
@@ -226,10 +234,18 @@ h1 {
   width: 100%;
 }
 
-.about-first-inner {
+.about{
+  width: 100%;
+}
+
+.about-inner{
+  width: 100%;
   background: #1c1a19;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  
+}
+
+.about-first-inner {
+  margin: 0 0.5rem;
 }
 
 .about-me {
@@ -240,6 +256,10 @@ h1 {
   background-position: 100% 100%;
   border-bottom: 2px solid #ccc;
   margin-bottom: 2rem;
+}
+
+.about-me-inner{
+  margin: 0 0.5rem;
 }
 
 .language,
@@ -285,7 +305,7 @@ li {
 }
 
 form {
-  width: 100%;
+  width: 90%;
   margin-bottom: 2rem;
 }
 
@@ -294,18 +314,22 @@ input {
   outline: none;
   width: 100%;
   padding: 1rem;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #DBD8D7;
   background: none;
   margin-bottom: 0.5rem;
 }
 
 textarea {
-  border: 1px solid lightgray;
+  border: 2px solid #DBD8D7;
   background: none;
-  width: 100%;
+  width: 90%;
   height: 114px;
   padding: 1rem;
   margin-bottom: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .border-top {
@@ -322,8 +346,8 @@ textarea {
 }
 
 .hr-bold {
-  background: gray;
+  background: #0D151E;
   width: 150px;
-  height: 3px;
+  height: 5px;
   margin: 0.5rem auto;
 }
