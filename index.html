@@ -20,6 +20,7 @@
         </button>
       </nav>
     </header>
+  
     <section id="hero" class="hero">
       <div class="hero-inner">
         <h1>Hey There.I’m Victor</h1>
@@ -124,7 +125,8 @@
         </ul>
       </div>
     </section>
-    <section id="projects" class="mobile-projects">
+   
+    <section id="projects" class="mobile-projects"> 
       <h2 class="display-head">My Recent Works</h2>
       <div class="hr"></div>
       <div class="project-inner grid-row-one">
@@ -249,11 +251,13 @@
           </div>
         </div>
       </div>
-    </section>
-    <section id="about" class="about grid-row-one">
-      <div class="about-first-inner grid-row-one">
+    </section> 
+     <section id="about" class="about  "> 
+     <div class="about-inner">
+      <div class="about-first-inner grid-row-one  ">
         <div class="about-me">
-          <h1>About me</h1>
+          <div class="about-me-inner">
+            <h1>About me</h1>
           <p class="paragraph" id="white-p">
             Hello I’m a software developer! I can help you build a product ,
             feature or website Look through some of my work and experience! If
@@ -261,6 +265,7 @@
             hestiate to contact me.
           </p>
           <button class="btn">Get My Resume</button>
+          </div>
         </div>
         <div class="language">
           <ul class="ul">
@@ -338,20 +343,24 @@
           </ul>
         </div>
       </div>
+     </div>
       <div class="closure">
         <div class="clossure-inner">
           <h3 class="paragraph">
             I'm always interested in hearing about new projects, so if you'd
             like to chat please get in touch.
           </h3>
-          <form>
-            <input type="text" placeholder="full name" />
-            <input type="email" placeholder="email" />
+          <form action="https://formspree.io/f/mayaljpn
+          " method="POST">
+            <input type="text" placeholder="full name" required maxlength="30" />
+            <input type="email" placeholder="email" required/>
             <textarea
               name="text"
               id="text"
               cols="30"
               rows="10"
+              maxlength="500"
+              required
               placeholder="enter text here"
             ></textarea>
             <button type="submit" class="btn">Get in Touch</button>
@@ -451,6 +460,7 @@
           <div class="hr-bold"></div>
         </div>
       </div>
-    </section>
+    </section> 
+  
   </body>
 </html>
