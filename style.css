@@ -368,7 +368,7 @@ textarea {
   margin: 0.5rem auto;
 }
 
-@media all and (min-width: 769px) {
+@media all and (min-width: 1025px) {
   .nav-item {
     display: flex;
   }
@@ -379,7 +379,7 @@ textarea {
 
   .hero {
     padding: 2rem 0 1rem 0;
-    height: 500px;
+    height: 100vh;
     background-image: url("img/Illustration-headerdesktop.png");
     background-position: 100% 0;
     background-repeat: no-repeat;
@@ -415,6 +415,7 @@ textarea {
   }
 
   .grid-desktop {
+    width: 100%;
     display: grid;
     gap: 0.5rem;
     grid-template-columns: repeat(2, 1fr);
@@ -426,8 +427,12 @@ textarea {
   }
 
   .hr {
-    width: 40%;
-    margin: 2rem 0 0 0;
+    width: 70%;
+    margin: 2rem 0 0 1rem;
+  }
+
+  .lead-description {
+    margin-top: -2rem;
   }
 
   .mobile-projects {
@@ -473,22 +478,28 @@ textarea {
     background-image: url(./img/Groupdesk.png);
     background-repeat: no-repeat;
     background-position: 100% 50%;
-    border-bottom: 2px solid #ccc;
+    border-bottom: none;
     margin-bottom: 2rem;
+  }
+
+  .about-me-cont {
+    margin-left: 4rem;
+    margin-right: 6rem;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 8rem;
   }
 
   .about-me-inner {
     max-width: 500px;
-    margin-left: 2rem;
     margin-right: auto;
   }
 
   .technologies {
-    margin-right: 2rem;
+    margin-left: 7rem !important;
     width: 100%;
     display: grid;
-    gap: 0.2rem;
     grid-template-columns: repeat(3, 1fr);
+    place-items: start;
   }
 
   .language,
@@ -498,24 +509,32 @@ textarea {
   }
 
   .grid-desktops {
+    margin-left: 4rem;
+    margin-right: 4rem;
     display: grid;
-    width: 100%;
     gap: 1rem;
     grid-template-areas: "a b b b";
   }
 
-  .grid-desktop .paragraph {
+  .grid-desktop_para {
     grid-area: a;
-    max-width: 400px;
-    margin-left: 2rem;
+    font-family: "Inter", sans-serif;
+    max-width: 450px;
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 500;
   }
 
   .grid-desktop form {
     grid-area: b;
   }
+
+  .hr-bold {
+    display: none;
+  }
 }
 
-@media all and (min-width: 1025px) {
+/* @media all and (min-width: 1025px) {
   .hero {
     padding: 2rem 0 1rem 0;
     height: 100vh;
@@ -534,4 +553,4 @@ textarea {
     border-bottom: 2px solid #ccc;
     margin-bottom: 2rem;
   }
-}
+} */
