@@ -47,6 +47,47 @@ a {
   font-weight: 700;
 }
 
+.socials a {
+  margin: 1rem 0.4rem;
+  text-align: left;
+}
+
+.anchor-div a {
+  padding: 0.5rem 0.5rem;
+  text-decoration: none;
+  background: none;
+  border: 1px solid #8993a4;
+  color: #091e42;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 0.5rem;
+}
+
+li {
+  list-style: none;
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  line-height: 44px;
+  color: #fff;
+  text-align: center;
+}
+
+.nav-item {
+  display: none;
+}
+
+.nav-item li {
+  list-style: none;
+  margin: 0 0.4rem;
+}
+
+.nav-item li a {
+  text-decoration: none;
+  margin: 0 0.4rem;
+  font-size: 1rem;
+  color: white;
+}
+
 .toggle-button {
   display: flex;
   flex-direction: column;
@@ -104,11 +145,6 @@ h1 {
   font-size: 16px;
   color: white;
   font-family: "Poppins", sans-serif;
-}
-
-.socials a {
-  margin: 1rem 0.4rem;
-  text-align: left;
 }
 
 .mobile-projects {
@@ -176,17 +212,6 @@ h1 {
   margin-bottom: 1rem;
 }
 
-.anchor-div a {
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  background: none;
-  border: 1px solid #8993a4;
-  color: #091e42;
-  font-size: 15px;
-  font-weight: 500;
-  margin: 0 0.5rem;
-}
-
 .btn {
   background: #ff6b00;
   padding: 0.5rem 1rem;
@@ -248,6 +273,7 @@ h1 {
 }
 
 .about-me {
+  width: 100%;
   margin-top: 4rem;
   height: 500px;
   background-image: url(./img/Group.png);
@@ -284,15 +310,6 @@ ul {
 .ul {
   display: flex;
   flex-direction: column;
-}
-
-li {
-  list-style: none;
-  font-family: "Inter", sans-serif;
-  font-size: 22px;
-  line-height: 44px;
-  color: #fff;
-  text-align: center;
 }
 
 .closure {
@@ -349,4 +366,172 @@ textarea {
   width: 150px;
   height: 5px;
   margin: 0.5rem auto;
+}
+
+@media all and (min-width: 769px) {
+  .nav-item {
+    display: flex;
+  }
+
+  .toggle-button {
+    display: none;
+  }
+
+  .hero {
+    padding: 2rem 0 1rem 0;
+    height: 500px;
+    background-image: url("img/Illustration-headerdesktop.png");
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .hero-inner {
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+  }
+
+  .hero-inner .flex-align-center {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .desktop-max-width {
+    max-width: 566px;
+    margin-left: 2rem;
+    margin-right: auto;
+  }
+
+  .h1 {
+    max-width: 380px;
+  }
+
+  .flex-desktop {
+    display: flex;
+    align-items: center;
+  }
+
+  .grid-desktop {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .display-head {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .hr {
+    width: 40%;
+    margin: 2rem 0 0 0;
+  }
+
+  .mobile-projects {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .projects {
+    margin: 0 0.5rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .project-one {
+    width: 100%;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .first-project {
+    background-image: url(img/ImgPlaceholderdesktop1.png);
+  }
+
+  .second-project {
+    background-image: url(img/imgPlaceholderdesktop2.png);
+  }
+
+  .third-project {
+    background-image: url(img/imgPlaceholderdesktop3.png);
+  }
+
+  .fourth-project {
+    background-image: url(img/imgPlaceholderdesktop4.png);
+  }
+
+  .about-me {
+    margin-top: 4rem;
+    height: 500px;
+    background-image: url(./img/Groupdesk.png);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 2rem;
+  }
+
+  .about-me-inner {
+    max-width: 500px;
+    margin-left: 2rem;
+    margin-right: auto;
+  }
+
+  .technologies {
+    margin-right: 2rem;
+    width: 100%;
+    display: grid;
+    gap: 0.2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .language,
+  .framework,
+  .skill {
+    justify-content: flex-start;
+  }
+
+  .grid-desktops {
+    display: grid;
+    width: 100%;
+    gap: 1rem;
+    grid-template-areas: "a b b b";
+  }
+
+  .grid-desktop .paragraph {
+    grid-area: a;
+    max-width: 400px;
+    margin-left: 2rem;
+  }
+
+  .grid-desktop form {
+    grid-area: b;
+  }
+}
+
+@media all and (min-width: 1025px) {
+  .hero {
+    padding: 2rem 0 1rem 0;
+    height: 100vh;
+    background-image: url("img/Illustration-headerdesktop.png");
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .about-me {
+    margin-top: 4rem;
+    height: 100vh;
+    background-image: url(./img/Groupdesk.png);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 2rem;
+  }
 }
