@@ -42,10 +42,18 @@ a {
   text-decoration: none;
 }
 
+.logo {
+  transition: transform 2s ease-in-out;
+}
+
 .logo a {
   font-size: 18px;
   color: white;
   font-weight: 700;
+}
+
+.logo:hover {
+  transform: scale(1.2);
 }
 
 .socials a {
