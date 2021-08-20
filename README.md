@@ -7,6 +7,11 @@ personal portfolio
 
 ![screenshot](./screenshots/mobile-head-screenshot.png)
 
+
+## Live Demo
+
+[Live Demo Link](https://victor-chukwu.github.io/portfolio/)
+
 ## Built With
 - html, css
 - node, git
