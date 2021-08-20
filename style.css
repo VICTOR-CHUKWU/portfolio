@@ -8,6 +8,7 @@ body {
   margin: 0;
   background: #fff;
   line-height: 24px;
+  overflow-x: hidden;
 }
 
 header {
