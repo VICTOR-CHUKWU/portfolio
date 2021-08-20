@@ -6,7 +6,7 @@
 body {
   padding: 0;
   margin: 0;
-  background: #e5e5e5;
+  background: #fff;
   line-height: 24px;
 }
 
@@ -69,7 +69,12 @@ li {
   font-size: 22px;
   line-height: 44px;
   color: #fff;
-  text-align: center;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-item {
@@ -79,6 +84,7 @@ li {
 .nav-item li {
   list-style: none;
   margin: 0 0.4rem;
+  align-self: center;
 }
 
 .nav-item li a {
@@ -86,6 +92,11 @@ li {
   margin: 0 0.4rem;
   font-size: 1rem;
   color: white;
+  align-self: center;
+}
+
+.svg {
+  margin-top: 0.4rem !important;
 }
 
 .toggle-button {
@@ -310,6 +321,11 @@ ul {
 .ul {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+}
+
+.ul li {
+  text-align: left;
 }
 
 .closure {
@@ -371,6 +387,7 @@ textarea {
 @media all and (min-width: 1025px) {
   .nav-item {
     display: flex;
+    align-items: center;
   }
 
   .toggle-button {
