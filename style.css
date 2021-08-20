@@ -229,7 +229,7 @@ h1 {
   background-image: url("./img/ImgPlaceholder(2).png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .project-inner {
