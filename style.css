@@ -380,13 +380,14 @@ input {
 textarea {
   border: 2px solid #dbd8d7;
   background: none;
-  width: 90%;
+  width: 95%;
   height: 114px;
   padding: 1rem;
   margin-bottom: 1.5rem;
   margin-left: auto;
   margin-right: auto;
-  font-size: 15px;
+  margin-top: 1rem;
+  font-size: 18px;
   font-weight: 500;
 }
 
