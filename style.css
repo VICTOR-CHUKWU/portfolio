@@ -105,7 +105,7 @@ li {
 }
 
 .svg {
-  margin-top: 0.4rem !important;
+  margin-top: 0.5rem !important;
   animation: bounce 5s infinite;
 }
 
@@ -116,8 +116,6 @@ li {
 
   50% {
     transform: scale(1.5);
-    fill: #ff6b00;
-    border-radius: 50%;
   }
 
   100% {
@@ -359,7 +357,7 @@ ul {
 }
 
 .clossure-inner {
-  margin: 4rem 1rem 3rem 1rem;
+  margin: 4rem 1rem 0.5rem 1rem;
 }
 
 form {
@@ -396,14 +394,6 @@ textarea {
   padding-top: 3rem;
 }
 
-.w-100 {
-  width: 100%;
-}
-
-.m-3 {
-  margin: 0 1rem;
-}
-
 .hr-bold {
   background: #0d151e;
   width: 150px;
@@ -414,7 +404,6 @@ textarea {
 @media all and (min-width: 1025px) {
   .nav-item {
     display: flex;
-    align-items: center;
   }
 
   .toggle-button {
