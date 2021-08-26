@@ -116,8 +116,6 @@ li {
 
   50% {
     transform: scale(1.5);
-    fill: #ff6b00;
-    border-radius: 50%;
   }
 
   100% {
@@ -259,6 +257,11 @@ h1 {
   line-height: 24px;
   outline: none;
   border: 1px solid transparent;
+  transition: transform 1s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(1rem);
 }
 
 .project-one {
