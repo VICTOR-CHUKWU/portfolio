@@ -1,11 +1,11 @@
 
 
 # Project Name
-personal portfolio
+deploying my portfolio page
 
 > this project is a project on my porfolio
 
-![screenshot](./screenshots/mobile-head-screenshot.png)
+![screenshot](./screenshots/mobile-head-screenshot.PNG)
 
 
 ## Live Demo
