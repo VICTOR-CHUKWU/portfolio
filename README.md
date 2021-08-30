@@ -1,7 +1,7 @@
 
 
 # Project Name
-personal portfolio
+deploying my portfolio page
 
 > this project is a project on my porfolio
 
