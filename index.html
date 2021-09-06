@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B3M7ZLFLZ8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-B3M7ZLFLZ8"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-B3M7ZLFLZ8');
-</script>
+      gtag("config", "G-B3M7ZLFLZ8");
+    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,7 +32,7 @@
           <li><a href="#">about</a></li>
           <li><a href="#">contact</a></li>
           <li class="svg">
-            <a href="#" >
+            <a href="#">
               <svg
                 width="22"
                 height="18"
@@ -52,6 +57,18 @@
         </button>
       </nav>
     </header>
+    <section class="sidebar">
+      <div class="sidebar-inner">
+        <div class="sidebar-cancel">
+          <button class="cancel" type="button">&times;</button>
+        </div>
+        <div class="sidebar-menu">
+          <a href="#project" class="anchor-link">Portfolio</a>
+          <a href="#about" class="anchor-link">About</a>
+          <a href="#contact" class="anchor-link">Contact</a>
+        </div>
+      </div>
+    </section>
 
     <section id="hero" class="hero">
       <div class="hero-inner">
@@ -313,10 +330,10 @@
               <div class="about-me-inner">
                 <h1>About me</h1>
                 <p class="paragraph" id="white-p">
-                  Hello I’m a software developer! I can help you build a product ,
-                  feature or website Look through some of my work and experience!
-                  If you like what you see and have a project you need coded,
-                  don’t hestiate to contact me.
+                  Hello I’m a software developer! I can help you build a product
+                  , feature or website Look through some of my work and
+                  experience! If you like what you see and have a project you
+                  need coded, don’t hestiate to contact me.
                 </p>
                 <button class="btn">Get My Resume</button>
               </div>
@@ -401,7 +418,7 @@
           </div>
         </div>
       </div>
-      <div class="closure">
+      <div class="closure" id="contact">
         <div class="clossure-inner">
           <div class="grid-desktops">
             <h3 class="paragraph grid-desktop_para">
@@ -528,5 +545,6 @@
         </div>
       </div>
     </section>
+    <script src="index.js"></script>
   </body>
 </html>
