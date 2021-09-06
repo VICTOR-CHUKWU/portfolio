@@ -634,24 +634,3 @@ textarea {
     display: none;
   }
 }
-
-/* @media all and (min-width: 1025px) {
-  .hero {
-    padding: 2rem 0 1rem 0;
-    height: 100vh;
-    background-image: url("img/Illustration-headerdesktop.png");
-    background-position: 100% 0;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  .about-me {
-    margin-top: 4rem;
-    height: 100vh;
-    background-image: url(./img/Groupdesk.png);
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-    border-bottom: 2px solid #ccc;
-    margin-bottom: 2rem;
-  }
-} */
