@@ -25,4 +25,3 @@ function closeSideBar() {
     body.classList.remove('noscroll');
 }
 
-// anchorLink.forEach((anchor)=> anchor.addEventListener('click', closeSideBar))

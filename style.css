@@ -53,8 +53,8 @@ header {
   border: none;
   background: transparent;
   outline: none;
-  color: white;
-  font-size: 1.5rem;
+  color: #67798e;
+  font-size: 2rem;
   margin-left: auto;
 }
 
@@ -68,12 +68,15 @@ header {
 
 .anchor-link {
   width: 100%;
-  color: #fff;
-  font-size: 1.5rem;
+  color: #fff5e1;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  line-height: 44px;
   font-weight: 600;
-  border-bottom: 1px solid #fff;
-  padding-bottom: 1rem;
+  border-bottom: 1px solid #6f6c6b;
+  padding-bottom: 0.5rem;
   margin-bottom: 1rem;
+  padding-left: 0.5rem;
 }
 
 .dflex {
