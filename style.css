@@ -59,16 +59,22 @@ header {
   margin-left: auto;
 }
 
+.cancels {
+  position: absolute;
+  top: 4.5rem;
+  right: 1rem;
+  z-index: 8;
+}
+
 .modal {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: rgba(182, 177, 177, 0.5);
   position: fixed;
   z-index: 5;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
   visibility: hidden;
 }
 
@@ -77,6 +83,7 @@ header {
 }
 
 .modal-inner {
+  position: relative;
   opacity: 1;
   background: #fff;
   width: 90%;
@@ -89,7 +96,7 @@ header {
   font-weight: 700;
   color: #172b4d;
   font-size: 32px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-family: "Roboto", sans-serif;
 }
 
@@ -535,6 +542,37 @@ textarea {
 }
 
 @media all and (min-width: 1025px) {
+  .modal-inner {
+    width: 50%;
+    height: auto;
+    background: #fff;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+  }
+
+  .modal-img-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .modal-img {
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  .modal-title {
+    margin-bottom: 1rem;
+  }
+
+  .cancels {
+    position: absolute;
+    top: 4.5rem;
+    right: 30%;
+    z-index: 8;
+  }
+
   .sidebar {
     display: none;
   }
