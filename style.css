@@ -49,13 +49,87 @@ header {
   justify-content: flex-end;
 }
 
-.cancel {
+.cancel,
+.cancels {
   border: none;
   background: transparent;
   outline: none;
   color: #67798e;
   font-size: 2rem;
   margin-left: auto;
+}
+
+.cancels {
+  position: absolute;
+  top: 4.5rem;
+  right: 1rem;
+  z-index: 8;
+}
+
+.modal {
+  width: 100%;
+  height: 100vh;
+  background: rgba(182, 177, 177, 0.5);
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+}
+
+.show-modal {
+  visibility: visible;
+}
+
+.modal-inner {
+  position: relative;
+  opacity: 1;
+  background: #fff;
+  width: 90%;
+  height: auto;
+  margin: 2rem auto;
+  padding: 1rem 0.5rem;
+}
+
+.modal-title {
+  font-weight: 700;
+  color: #172b4d;
+  font-size: 32px;
+  margin-bottom: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.modal-text {
+  color: #344563;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.modal-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.modal-head {
+  display: flex;
+  align-items: center;
+}
+
+.mr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  height: 30px;
+}
+
+.modal-img {
+  width: 100%;
+  height: 100px;
 }
 
 .sidebar-menu {
@@ -224,7 +298,7 @@ h1 {
   color: #ff6b00;
   font-weight: 400;
   text-align: left;
-  font-family: "Crete Round", serif;
+  font-family: "Crete Round", sans-serif;
   line-height: 64px;
   letter-spacing: 0.37px;
 }
@@ -251,7 +325,7 @@ h1 {
 .display-head {
   font-weight: 400;
   text-align: center;
-  font-family: "Crete Round", serif;
+  font-family: "Crete Round", sans-serif;
   line-height: 52px;
   font-size: 40px;
   margin-bottom: 1rem;
@@ -286,7 +360,7 @@ h1 {
 .lead-description h2 {
   font-size: 32px;
   font-weight: 400;
-  font-family: "Crete Round", serif;
+  font-family: "Crete Round", sans-serif;
   color: #091e42;
   text-align: left;
   line-height: 44px;
@@ -469,6 +543,42 @@ textarea {
 }
 
 @media all and (min-width: 1025px) {
+  .modal-inner {
+    width: 50%;
+    height: auto;
+    background: #fff;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+  }
+
+  .grid-modal {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .modal-img-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .modal-img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .modal-title {
+    margin-bottom: 1rem;
+  }
+
+  .cancels {
+    position: absolute;
+    top: 4.5rem;
+    right: 30%;
+    z-index: 8;
+  }
+
   .sidebar {
     display: none;
   }
