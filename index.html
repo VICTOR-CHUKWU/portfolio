@@ -434,15 +434,29 @@
               action="https://formspree.io/f/mayaljpn
             "
               method="POST"
+              class="signup"
             >
+             <div class="form-control">
               <input
-                type="text"
-                placeholder="Full Name"
-                required
-                maxlength="30"
-              />
-              <input type="email" placeholder="Email" required />
-              <textarea
+              type="text"
+              name="name"
+              id="name"
+              value=""
+              class="name"
+              placeholder="Full Name"
+              required
+              maxlength="30"
+            />
+            <small></small>
+             </div>
+            
+            <div class="form-control">
+              <input type="email" placeholder="Email" name="email" required class="email" id="email" value=""/>
+              <small></small>
+            </div>
+             
+              <div class="form-control">
+                <textarea
                 name="text"
                 id="text"
                 cols="30"
@@ -450,8 +464,11 @@
                 maxlength="500"
                 required
                 placeholder="enter text here"
+                class="text"
               ></textarea>
-              <button type="submit" class="btn">Get in Touch</button>
+              <small></small>
+              </div>
+              <button type="submit" onclick="formSubmit(event)" class="btn">Get in Touch</button>
             </form>
           </div>
           <div class="m-3">
@@ -553,3 +570,5 @@
     <script src="index.js"></script>
   </body>
 </html>
+
+

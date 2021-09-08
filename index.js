@@ -1,3 +1,4 @@
+/* eslint-disable prefer-const */
 const ToggleBar = document.querySelector('.toggle-button');
 const body = document.querySelector('body');
 const sideBar = document.querySelector('.sidebar');
@@ -8,6 +9,11 @@ const modalButton = document.querySelectorAll('.btn-modal');
 const modal = document.querySelector('.modal');
 const modalInner = document.querySelector('.modal-inner');
 const width = window.innerWidth;
+const form = document.querySelector('.signup');
+const names = document.querySelector('.name');
+const email = document.querySelector('.email');
+const text = document.querySelector('.text');
+
 const projects = [
   {
     key: 0,
@@ -150,3 +156,52 @@ modalButton.forEach((button, index) => {
 anchorLink.forEach((anchor) => {
   anchor.addEventListener('click', closeSideBar);
 });
+
+function setErrorFor(input, message) {
+  const formControl = input.parentElement;
+  const small = formControl.querySelector('small');
+  formControl.className = 'form-control error';
+  small.innerText = message;
+}
+
+function setSuccessFor(input) {
+  const formControl = input.parentElement;
+  formControl.className = 'form-control success';
+}
+
+function isEmail(email) {
+  return /^(([^<>()\\[\]\\.,;:\s@"]+(\.[^<>()\\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+}
+
+function checkInputs() {
+  // trim to remove the whitespaces
+  const usernameValue = names.value.trim();
+  const emailValue = email.value.trim();
+  const textValue = text.value.trim();
+
+  if (usernameValue === '') {
+    setErrorFor(names, 'Username cannot be blank');
+  } else {
+    setSuccessFor(names);
+  }
+
+  if (emailValue === '') {
+    setErrorFor(email, 'Email cannot be blank');
+  } else if (!isEmail(emailValue)) {
+    setErrorFor(email, 'Not a valid email');
+  } else {
+    setSuccessFor(email);
+  }
+
+  if (textValue === '') {
+    setErrorFor(text, 'text cannot be blank');
+  } else {
+    setSuccessFor(text);
+  }
+}
+const formSubmit = (e) => {
+  e.preventDefault();
+  checkInputs();
+};
+
+form.addEventListener('submit', formSubmit);
