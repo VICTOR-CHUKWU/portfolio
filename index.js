@@ -13,6 +13,9 @@ const form = document.querySelector('.signup');
 const names = document.querySelector('.name');
 const email = document.querySelector('.email');
 const text = document.querySelector('.text');
+const usernameValue = names.value.trim();
+const emailValue = email.value.trim();
+const textValue = text.value.trim();
 
 const projects = [
   {
@@ -175,9 +178,6 @@ function isEmail(email) {
 
 function checkInputs() {
   // trim to remove the whitespaces
-  const usernameValue = names.value.trim();
-  const emailValue = email.value.trim();
-  const textValue = text.value.trim();
 
   if (usernameValue === '') {
     setErrorFor(names, 'Username cannot be blank');
@@ -194,13 +194,12 @@ function checkInputs() {
   }
 
   if (textValue === '') {
-    setErrorFor(text, 'text cannot be blank');
+    setErrorFor(text, 'message cannot be blank');
   } else {
     setSuccessFor(text);
   }
 }
-const formSubmit = (e) => {
-  e.preventDefault();
+const formSubmit = () => {
   checkInputs();
 };
 
