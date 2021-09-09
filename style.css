@@ -21,6 +21,12 @@ header {
   height: 48px;
 }
 
+.error {
+  color: red;
+  font-size: 1rem;
+  text-align: center;
+}
+
 .sidebar {
   background: #3c3a39;
   width: 100%;
@@ -514,6 +520,16 @@ input {
   border-bottom: 1px solid #dbd8d7;
   background: none;
   margin-bottom: 0.5rem;
+}
+
+.form-control.success input,
+textarea {
+  border-color: #2ecc71;
+}
+
+.form-control.error input,
+textarea {
+  border-color: #e74c3c;
 }
 
 textarea {

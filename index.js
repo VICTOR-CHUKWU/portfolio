@@ -1,3 +1,4 @@
+/* eslint-disable prefer-const */
 const ToggleBar = document.querySelector('.toggle-button');
 const body = document.querySelector('body');
 const sideBar = document.querySelector('.sidebar');
@@ -8,6 +9,10 @@ const modalButton = document.querySelectorAll('.btn-modal');
 const modal = document.querySelector('.modal');
 const modalInner = document.querySelector('.modal-inner');
 const width = window.innerWidth;
+const form = document.querySelector('.signup');
+const email = document.querySelector('.email');
+const erremail = document.querySelector('.error');
+
 const projects = [
   {
     key: 0,
@@ -149,4 +154,13 @@ modalButton.forEach((button, index) => {
 
 anchorLink.forEach((anchor) => {
   anchor.addEventListener('click', closeSideBar);
+});
+
+form.addEventListener('submit', (e) => {
+  if (email.value === email.value.toLowerCase()) {
+    erremail.textContent = '';
+  } else {
+    e.preventDefault();
+    erremail.innerHTML = '*email must be in lower case';
+  }
 });
