@@ -10,12 +10,8 @@ const modal = document.querySelector('.modal');
 const modalInner = document.querySelector('.modal-inner');
 const width = window.innerWidth;
 const form = document.querySelector('.signup');
-const names = document.querySelector('.name');
 const email = document.querySelector('.email');
-const text = document.querySelector('.text');
-const usernameValue = names.value.trim();
-const emailValue = email.value.trim();
-const textValue = text.value.trim();
+const erremail = document.querySelector('.error');
 
 const projects = [
   {
@@ -160,47 +156,11 @@ anchorLink.forEach((anchor) => {
   anchor.addEventListener('click', closeSideBar);
 });
 
-function setErrorFor(input, message) {
-  const formControl = input.parentElement;
-  const small = formControl.querySelector('small');
-  formControl.className = 'form-control error';
-  small.innerText = message;
-}
-
-function setSuccessFor(input) {
-  const formControl = input.parentElement;
-  formControl.className = 'form-control success';
-}
-
-function isEmail(email) {
-  return /^(([^<>()\\[\]\\.,;:\s@"]+(\.[^<>()\\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
-}
-
-function checkInputs() {
-  // trim to remove the whitespaces
-
-  if (usernameValue === '') {
-    setErrorFor(names, 'Username cannot be blank');
+form.addEventListener('submit', (e) => {
+  if (email.value === email.value.toLowerCase()) {
+    erremail.textContent = '';
   } else {
-    setSuccessFor(names);
+    e.preventDefault();
+    erremail.innerHTML = '*email must be in lower case';
   }
-
-  if (emailValue === '') {
-    setErrorFor(email, 'Email cannot be blank');
-  } else if (!isEmail(emailValue)) {
-    setErrorFor(email, 'Not a valid email');
-  } else {
-    setSuccessFor(email);
-  }
-
-  if (textValue === '') {
-    setErrorFor(text, 'message cannot be blank');
-  } else {
-    setSuccessFor(text);
-  }
-}
-const formSubmit = () => {
-  checkInputs();
-};
-
-form.addEventListener('submit', formSubmit);
+});
