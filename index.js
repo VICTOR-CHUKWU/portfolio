@@ -11,7 +11,10 @@ const modalInner = document.querySelector('.modal-inner');
 const width = window.innerWidth;
 const form = document.querySelector('.signup');
 const email = document.querySelector('.email');
+const names = document.querySelector('.name');
+const text = document.querySelector('.text');
 const erremail = document.querySelector('.error');
+const formInputs = form.querySelectorAll('input, textarea');
 
 const projects = [
   {
@@ -163,4 +166,24 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     erremail.innerHTML = '*email must be in lower case';
   }
+});
+const saveToLocalStorage = (key, data) => localStorage.setItem(key, JSON.stringify(data));
+const getFromLocalStorage = (key) => JSON.parse(localStorage.getItem(key));
+
+const formData = getFromLocalStorage('formData');
+if (formData !== null) {
+  names.value = formData.name;
+  email.value = formData.email;
+  text.value = formData.message;
+}
+
+formInputs.forEach((fe) => {
+  fe.addEventListener('input', () => {
+    const objectForLocalStorage = {
+      name: names.value,
+      email: email.value,
+      message: text.value,
+    };
+    saveToLocalStorage('formData', objectForLocalStorage);
+  });
 });
