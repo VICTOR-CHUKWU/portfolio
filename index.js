@@ -15,8 +15,6 @@ const names = document.querySelector('.name');
 const text = document.querySelector('.text');
 const erremail = document.querySelector('.error');
 const formInputs = form.querySelectorAll('input, textarea');
-const saveToLocalStorage = (key, data) => localStorage.setItem(key, JSON.stringify(data));
-const getFromLocalStorage = (key) => JSON.parse(localStorage.getItem(key));
 
 const projects = [
   {
@@ -169,6 +167,8 @@ form.addEventListener('submit', (e) => {
     erremail.innerHTML = '*email must be in lower case';
   }
 });
+const saveToLocalStorage = (key, data) => localStorage.setItem(key, JSON.stringify(data));
+const getFromLocalStorage = (key) => JSON.parse(localStorage.getItem(key));
 
 const formData = getFromLocalStorage('formData');
 if (formData !== null) {
